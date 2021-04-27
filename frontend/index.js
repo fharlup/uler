@@ -102,9 +102,9 @@ function handleGameOver(data) {
   gameActive = false;
 
   if (data.winner === playerNumber) {
-    alert('You Win!');
+    alert('Kamu menang!');
   } else {
-    alert('You Lose :(');
+    alert('Kamu kalah :(');
   }
 }
 
@@ -114,12 +114,12 @@ function handleGameCode(gameCode) {
 
 function handleUnknownCode() {
   reset();
-  alert('Unknown Game Code')
+  alert('kode game ga ketemu')
 }
 
 function handleTooManyPlayers() {
   reset();
-  alert('This game is already in progress');
+  alert('game sedang berlangsung');
 }
 
 function reset() {
